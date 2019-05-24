@@ -51,7 +51,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 3. Your `htmlRoutes.js` file should include two routes:
 
    * A GET Route to `/survey` which should display the survey page.
-   * A default, catch-all route that leads to `home.html` which displays the home page.
+   * A default, catch-all droute that leads to `home.html` which displays the home page.
 
 4. Your `apiRoutes.js` file should contain two routes:
 
