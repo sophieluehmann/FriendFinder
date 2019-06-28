@@ -14,6 +14,38 @@ var friends = [
             4,
             1
           ]
+    },
+    {
+      "name": "Polly",
+      "photo": "pollypocket.com",
+      "scores": [
+      "2",
+      "1",
+      "4",
+      "2",
+      "1",
+      "3",
+      "5",
+      "2",
+      "1",
+      "3"
+      ]
+    },
+   {
+      "name": "Allison",
+      "photo": "allison.com",
+      "scores": [
+      "1",
+      "5",
+      "3",
+      "4",
+      "3",
+      "5",
+      "3",
+      "4",
+      "1",
+      "1"
+      ]
     }
 ];
 
