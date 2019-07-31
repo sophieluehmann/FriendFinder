@@ -15,5 +15,10 @@ app.get("/", function(req, res) {
 app.get("/api/friends", function(req, res) {
     res.sendFile(path.join(__dirname, "../data/friends.js"));
 });
-};
 
+
+app.get("/match", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/match.html"))
+});
+
+};
