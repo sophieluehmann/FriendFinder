@@ -156,15 +156,33 @@
             <option value="4">4</option>             
             <option value="5">5</option>
         </select>
-        <a href="/match">
+     
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" >
             Submit
         </button>
-        </a>
+
+        <div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Your New Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        
      </div>
   
 
     <script type="text/javascript">
+    var currentURL = window.location.origin;
         $("#submit").on("click", function(event) {
           event.preventDefault();
           var newFriend = {
@@ -184,12 +202,12 @@
             ]
           };
           console.log(newFriend);
-          $.post("/api/friends", newFriend, 
-            function(data) {
-              
-             // alert("adding friend");
-
-            });
+          $.post(currentURL + "/api/friends", newFriend, function(data) {
+              console.log(data);
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
             
         });
         

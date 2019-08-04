@@ -13,9 +13,6 @@ app.post("/api/friends", function(req, res) {
 
     var newFriend = req.body;
 
-    friends.push(newFriend);
-
-    res.json(newFriend);
     var compatibility = 0;
     var bestfriend = friends[0];
     for (var x = 0; x<10; x++) {
@@ -45,5 +42,7 @@ app.post("/api/friends", function(req, res) {
             console.log("best match = " + bestfriend.name);
         }
     }
+    res.json(bestfriend);
+    friends.push(newFriend);
 });
 }

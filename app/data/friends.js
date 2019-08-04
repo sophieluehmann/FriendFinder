@@ -17,7 +17,7 @@ var friends = [
     },
     {
       "name": "Polly",
-      "photo": "pollypocket.com",
+      "photo": "https://target.scene7.com/is/image/Target/GUEST_601896f4-8b92-46d0-b06e-b4de4a7195f3?wid=488&hei=488&fmt=webp",
       "scores": [
       "2",
       "1",
@@ -33,7 +33,7 @@ var friends = [
     },
    {
       "name": "Allison",
-      "photo": "allison.com",
+      "photo": "https://consequenceofsound.net/wp-content/uploads/2019/04/nxivm-e1554753095961.jpg?quality=80&w=807",
       "scores": [
       "1",
       "5",
